@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import TextField from '@mui/material/TextField';
+import { profile } from '../data';
 
 function Contact() {
 
@@ -53,8 +54,8 @@ function Contact() {
     <div id="contact">
       <div className="items-container">
         <div className="contact_wrapper">
-          <h1>Contact Me</h1>
-          <p>Got a project waiting to be realized? Let's collaborate and make it happen!</p>
+          <h1>{profile.contactHeading}</h1>
+          <p>{profile.contactMessage}</p>
           <Box
             ref={form}
             component="form"
